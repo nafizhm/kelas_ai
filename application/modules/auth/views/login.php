@@ -1,0 +1,8 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Login Admin</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></head>
+<body class="hold-transition login-page bg-navy"><div class="login-box"><div class="login-logo text-white"><b>AI APP</b> BUILDER</div><div class="card card-outline card-warning"><div class="card-header text-center"><b>Login Admin</b></div><div class="card-body">
+<?php if (!empty($error) || $this->session->flashdata('error')): ?><div class="alert alert-danger"><?= html_escape(!empty($error) ? $error : $this->session->flashdata('error')) ?></div><?php endif; ?>
+<?= validation_errors('<div class="alert alert-danger">','</div>') ?>
+<?= form_open('admin/login') ?><div class="input-group mb-3"><input name="username" class="form-control" placeholder="Username" value="<?= set_value('username') ?>" autofocus><div class="input-group-append"><div class="input-group-text"><i class="fas fa-user"></i></div></div></div>
+<div class="input-group mb-3"><input type="password" name="password" class="form-control" placeholder="Password"><div class="input-group-append"><div class="input-group-text"><i class="fas fa-lock"></i></div></div></div><button class="btn btn-warning btn-block font-weight-bold">Masuk</button><?= form_close() ?>
+<a class="d-block text-center mt-3" href="<?= base_url() ?>">Kembali ke landing page</a></div></div></div></body></html>

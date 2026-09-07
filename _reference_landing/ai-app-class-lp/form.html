@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Daftar Kelas Gratis</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="form-page">
+<div class="form-shell">
+  <a class="brand form-brand" href="index.html"><img src="assets/logo.svg" alt=""><span>AI APP BUILDER</span></a>
+  <div class="registration-card">
+    <div class="eyebrow">FORM PENDAFTARAN</div>
+    <h1>Daftar Kelas Gratis</h1>
+    <p>Isi data dengan benar. Setelah submit, peserta akan diarahkan ke member area.</p>
+    <form id="leadForm">
+      <label>Nama lengkap<input required name="nama" type="text" placeholder="Nama Anda"></label>
+      <label>No. WhatsApp<input required name="wa" type="tel" placeholder="08xxxxxxxxxx"></label>
+      <label>Email<input required name="email" type="email" placeholder="nama@email.com"></label>
+      <label>Profesi Anda
+        <select required name="profesi">
+          <option value="">Pilih profesi</option><option>Pemilik usaha</option><option>Karyawan / staf</option><option>Guru / tenaga pendidikan</option><option>Mahasiswa / pelajar</option><option>Freelancer</option><option>Programmer</option><option>Lainnya</option>
+        </select>
+      </label>
+      <label>Web / sistem / aplikasi apa yang ingin Anda buat?
+        <textarea required name="ide" rows="5" placeholder="Contoh: aplikasi stok barang, sistem booking, website usaha, aplikasi sekolah, dll."></textarea>
+      </label>
+      <label>Seberapa serius Anda ingin membuatnya?
+        <select required name="intent">
+          <option value="">Pilih salah satu</option><option>Sekadar ingin belajar</option><option>Punya ide dan ingin mencoba</option><option>Sudah punya kebutuhan nyata</option><option>Sedang membutuhkan sistem sekarang</option>
+        </select>
+      </label>
+      <button class="btn btn-primary btn-xl" type="submit">Masuk ke Member Area</button>
+      <small>Demo form ini belum terhubung ke database. Hubungkan action/API sesuai backend yang digunakan.</small>
+    </form>
+  </div>
+</div>
+<script>document.getElementById('leadForm').addEventListener('submit',function(e){e.preventDefault();window.location='member.html';});</script>
+</body>
+</html>
