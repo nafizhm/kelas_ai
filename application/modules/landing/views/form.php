@@ -85,8 +85,18 @@ src="https://www.facebook.com/tr?id=1790596855268019&ev=PageView&noscript=1"
 
       // Registrasi berhasil tersimpan: kirim event Lead ke Meta Pixel.
       if (typeof fbq === 'function') {
-        fbq('track', 'Lead');
-      }
+    		fbq('track', 'Lead');
+			}
+
+			setTimeout(function () {
+					if (whatsappTab) {
+							whatsappTab.location.href = result.whatsapp_url;
+					} else {
+							window.open(result.whatsapp_url, '_blank');
+					}
+
+					window.location.replace(result.redirect_url);
+			}, 1200);
 
       if (whatsappTab) {
         whatsappTab.location.href = result.whatsapp_url;
