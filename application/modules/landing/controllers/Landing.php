@@ -40,7 +40,7 @@ class Landing extends MX_Controller
         ));
 
         $pesan = 'Hallo, saya '.$nama.' sudah melakukan registrasi minta diproses ya kak ...';
-        $whatsapp_url = 'https://wa.me/6281222992911?text='.rawurlencode($pesan);
+        $whatsapp_url = 'https://wa.me/6282221992911?text='.rawurlencode($pesan);
 
         if ($this->input->is_ajax_request()) {
             return $this->json_response(array(

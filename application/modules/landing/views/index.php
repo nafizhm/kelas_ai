@@ -11,14 +11,14 @@
   <link rel="stylesheet" href="assets/style.css" />
   <style>
     html, body.short-lp {
+      width: 100%;
       max-width: none;
-      overflow-x: visible;
+      overflow-x: clip;
     }
 
     @media (max-width: 600px) {
       body.short-lp { padding-bottom: 0; }
     }
-
   </style>
 </head>
 <body class="short-lp">
