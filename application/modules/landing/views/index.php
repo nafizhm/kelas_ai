@@ -9,6 +9,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css" />
+  <style>
+    html, body.short-lp {
+      max-width: none;
+      overflow-x: visible;
+    }
+
+    @media (max-width: 600px) {
+      .mobile-sticky-cta {
+        left: 12px;
+        right: auto;
+        width: calc(100% - 24px);
+        max-width: calc(100vw - 24px);
+        box-sizing: border-box;
+      }
+    }
+  </style>
 </head>
 <body class="short-lp">
   <header class="nav-wrap">
