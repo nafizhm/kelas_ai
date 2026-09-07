@@ -16,14 +16,9 @@
     }
 
     @media (max-width: 600px) {
-      .mobile-sticky-cta {
-        left: 12px;
-        right: auto;
-        width: calc(100% - 24px);
-        max-width: calc(100vw - 24px);
-        box-sizing: border-box;
-      }
+      body.short-lp { padding-bottom: 0; }
     }
+
   </style>
 </head>
 <body class="short-lp">
@@ -160,7 +155,6 @@
     </div>
   </footer>
 
-  <a class="mobile-sticky-cta" href="<?= site_url('daftar') ?>">DAFTAR GRATIS →</a>
   <script src="assets/script.js"></script>
 </body>
 </html>
