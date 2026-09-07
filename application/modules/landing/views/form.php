@@ -96,7 +96,7 @@ src="https://www.facebook.com/tr?id=1790596855268019&ev=PageView&noscript=1"
 					}
 
 					window.location.replace(result.redirect_url);
-			}, 1200);
+			}, 4000);
 
       if (whatsappTab) {
         whatsappTab.location.href = result.whatsapp_url;
