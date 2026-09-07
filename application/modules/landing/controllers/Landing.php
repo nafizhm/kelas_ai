@@ -38,6 +38,7 @@ class Landing extends MX_Controller
             'email' => $this->input->post('email', TRUE), 'profesi' => $this->input->post('profesi', TRUE),
             'ide' => $this->input->post('ide', TRUE), 'intent' => $this->input->post('intent', TRUE)
         ));
+		
 
         $pesan = 'Hallo, saya '.$nama.' sudah melakukan registrasi minta diproses ya kak ...';
         $whatsapp_url = 'https://wa.me/6282221992911?text='.rawurlencode($pesan);

@@ -83,6 +83,11 @@ src="https://www.facebook.com/tr?id=1790596855268019&ev=PageView&noscript=1"
         throw new Error(result.message || 'Pendaftaran gagal. Silakan coba kembali.');
       }
 
+      // Registrasi berhasil tersimpan: kirim event Lead ke Meta Pixel.
+      if (typeof fbq === 'function') {
+        fbq('track', 'Lead');
+      }
+
       if (whatsappTab) {
         whatsappTab.location.href = result.whatsapp_url;
       } else {
